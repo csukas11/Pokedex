@@ -28,37 +28,4 @@ struct Pokemon {
     self.atk = atk
     self.sp = sp
   }
-  
-  /* static func getFavorites() -> [Int] {
-    let defaults = UserDefaults.standard
-    guard let favorites = defaults.object(forKey: "favoritePokemons") as? [Int] else { return [] }
-    return favorites
-  }
-  
-  static func isFavorite(id: Int) -> Bool {
-    let defaults = UserDefaults.standard
-    guard let favorites = defaults.object(forKey: "favoritePokemons") as? [Int] else {
-      return false
-    }
-    return favorites.contains(id)
-  }
-  
-  static func setFavorite(id: Int) {
-    let defaults = UserDefaults.standard
-    if var favorites = defaults.object(forKey: "favoritePokemons") as? [Int] {
-      guard !favorites.contains(id) else { return }
-      favorites.append(id)
-      defaults.set(favorites, forKey: "favoritePokemons")
-    } else {
-      defaults.set([id], forKey: "favoritePokemons")
-    }
-  }
-  
-  static func unsetFavorite(id: Int) {
-    let defaults = UserDefaults.standard
-    if var favorites = defaults.object(forKey: "favoritePokemons") as? [Int] {
-      favorites = favorites.filter { $0 != id }
-      defaults.set(favorites, forKey: "favoritePokemons")
-    }
-  }*/
 }

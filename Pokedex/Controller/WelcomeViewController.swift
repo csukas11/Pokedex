@@ -31,41 +31,6 @@ class WelcomeViewController: UIViewController {
   
   private var typeList = PokedexDataStore.Types.items
   
-  /*private var username: String {
-    get {
-      // Load username from storage
-      let defaults = UserDefaults.standard
-      if let name = defaults.string(forKey: "username") {
-        return name
-      } else {
-        defaults.set([Int](), forKey: "username")
-        return ""
-      }
-    }
-    set {
-      // Save username to storage
-      let defaults = UserDefaults.standard
-      defaults.set(newValue, forKey: "username")
-    }
-  }
-  private var favoriteTypes: [Int] {
-    get {
-      // Load user favorite types from storage
-      let defaults = UserDefaults.standard
-      if let favs = defaults.object(forKey: "favoriteTypes") as? [Int] {
-        return favs
-      } else {
-        defaults.set([Int](), forKey: "favoriteTypes")
-        return [Int]()
-      }
-    }
-    set {
-      // Save user favorite types to storage
-      let defaults = UserDefaults.standard
-      defaults.set(newValue, forKey: "favoriteTypes")
-    }
-  }*/
-  
   // MARK: Functions
   
   override func viewDidLoad() {
