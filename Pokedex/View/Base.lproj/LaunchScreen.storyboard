@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wzx-8f-zh9">
+                                <rect key="frame" x="155.5" y="367" width="103" height="172"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKE-xv-h1n">
+                                        <rect key="frame" x="0.0" y="138" width="103" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="InA-TN-7hD">
+                                        <rect key="frame" x="-8.5" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="itM-wx-drt"/>
+                                            <constraint firstAttribute="width" constant="120" id="jWg-SR-2ZU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bKE-xv-h1n" secondAttribute="trailing" id="JCh-4O-NF5"/>
+                                    <constraint firstItem="InA-TN-7hD" firstAttribute="top" secondItem="Wzx-8f-zh9" secondAttribute="top" id="OUN-FH-984"/>
+                                    <constraint firstAttribute="bottom" secondItem="bKE-xv-h1n" secondAttribute="bottom" id="QKL-PM-Lpw"/>
+                                    <constraint firstItem="bKE-xv-h1n" firstAttribute="leading" secondItem="Wzx-8f-zh9" secondAttribute="leading" id="WO1-NC-Qc4"/>
+                                    <constraint firstItem="InA-TN-7hD" firstAttribute="centerX" secondItem="bKE-xv-h1n" secondAttribute="centerX" id="XX4-S7-YjC"/>
+                                    <constraint firstItem="bKE-xv-h1n" firstAttribute="top" secondItem="InA-TN-7hD" secondAttribute="bottom" constant="18" id="qub-HF-xs9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wzx-8f-zh9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="U8J-IL-phH"/>
+                            <constraint firstItem="Wzx-8f-zh9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="f5a-JR-IF2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Pikachu" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

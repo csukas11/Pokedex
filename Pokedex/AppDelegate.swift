@@ -2,18 +2,69 @@
 //  AppDelegate.swift
 //  Pokedex
 //
-//  Created by Takács Ádám on 2022. 09. 07..
+//  Created by Tamás Csukás 2022
 //
 
 import UIKit
+import Foundation
+import FirebaseCore
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    FirebaseApp.configure()
+    let _ = User.instance // start user init
+    
+    let dispatchGroup = DispatchGroup()
+    
+    // Load Types
+    let typesFetcher = TypesFetcher()
+    dispatchGroup.enter()
+    typesFetcher.fetch { [weak dispatchGroup] response, error in
+      guard let response = response else { return }
+      for val in response {
+        PokedexDataStore.Types.add(val, forKey: val.id)
+      }
+      dispatchGroup?.leave()
+    }
+    
+    // Load Abilities
+    let abilitiesFetcher = AbilitiesFetcher()
+    dispatchGroup.enter()
+    abilitiesFetcher.fetch { [weak dispatchGroup] response, error in
+      guard let response = response else { return }
+      for val in response {
+        PokedexDataStore.Abilities.add(val, forKey: val.id)
+      }
+      dispatchGroup?.leave()
+    }
+    
+    // Load Moves
+    let movesFetcher = MovesFetcher()
+    dispatchGroup.enter()
+    movesFetcher.fetch { [weak dispatchGroup] response, error in
+      guard let response = response else { return }
+      for val in response {
+        PokedexDataStore.Moves.add(val, forKey: val.id)
+      }
+      dispatchGroup?.leave()
+    }
+    
+    // Load Pokemons
+    let pokemonsFetcher = PokemonsFetcher()
+    dispatchGroup.enter()
+    pokemonsFetcher.fetch { [weak dispatchGroup] response, error in
+      guard let response = response else { return }
+      for val in response {
+        PokedexDataStore.Pokemons.add(val, forKey: val.id)
+      }
+      dispatchGroup?.leave()
+    }
+    
+    let _ = dispatchGroup.wait()
+    
     return true
   }
 

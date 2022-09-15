@@ -7,23 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81278C88F8CFE830897C2010 /* Pods_Pokedex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B5ADB7E767B5946050F470C /* Pods_Pokedex.framework */; };
+		A602538F28D251AA005993E5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A602538E28D251AA005993E5 /* GoogleService-Info.plist */; };
+		A602539128D25CD1005993E5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A602539028D25CD1005993E5 /* User.swift */; };
+		A602539328D27628005993E5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A602539228D27628005993E5 /* LoginViewController.swift */; };
+		A663563928CA690B00B40FC1 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A663563728CA690B00B40FC1 /* SearchResultsViewController.swift */; };
+		A663563A28CA690B00B40FC1 /* SearchResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A663563828CA690B00B40FC1 /* SearchResultsViewController.xib */; };
+		A663564328CA6CDF00B40FC1 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A663564128CA6CDF00B40FC1 /* SearchResultsTableViewCell.swift */; };
+		A663564428CA6CDF00B40FC1 /* SearchResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A663564228CA6CDF00B40FC1 /* SearchResultsTableViewCell.xib */; };
 		A6C0D3D828C8F76D006D39F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D3D728C8F76D006D39F1 /* AppDelegate.swift */; };
 		A6C0D3DA28C8F76D006D39F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D3D928C8F76D006D39F1 /* SceneDelegate.swift */; };
-		A6C0D3DC28C8F76D006D39F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D3DB28C8F76D006D39F1 /* ViewController.swift */; };
+		A6C0D3DC28C8F76D006D39F1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D3DB28C8F76D006D39F1 /* SearchViewController.swift */; };
 		A6C0D3DF28C8F76D006D39F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C0D3DD28C8F76D006D39F1 /* Main.storyboard */; };
 		A6C0D3E128C8F76E006D39F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6C0D3E028C8F76E006D39F1 /* Assets.xcassets */; };
 		A6C0D3E428C8F76E006D39F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6C0D3E228C8F76E006D39F1 /* LaunchScreen.storyboard */; };
+		A6C0D3EC28C94618006D39F1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D3EB28C94618006D39F1 /* UIViewController+Extension.swift */; };
+		A6C0D3EF28CA4878006D39F1 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D3ED28CA4878006D39F1 /* SearchBarViewController.swift */; };
+		A6C0D3F028CA4878006D39F1 /* SearchBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C0D3EE28CA4878006D39F1 /* SearchBarViewController.xib */; };
+		A6C6344128CB4CB600ECADF6 /* PokemonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6343F28CB4CB600ECADF6 /* PokemonCollectionViewCell.swift */; };
+		A6C6344228CB4CB600ECADF6 /* PokemonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6C6344028CB4CB600ECADF6 /* PokemonCollectionViewCell.xib */; };
+		A6C6344628CB652000ECADF6 /* PokemonCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6344528CB652000ECADF6 /* PokemonCollectionViewController.swift */; };
+		A6C6344828CBB95500ECADF6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6344728CBB95500ECADF6 /* WelcomeViewController.swift */; };
+		A6C6344A28CBBFBE00ECADF6 /* FavoriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6344928CBBFBE00ECADF6 /* FavoriteCollectionViewCell.swift */; };
+		A6C6344C28CBFC4E00ECADF6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6344B28CBFC4E00ECADF6 /* DetailsViewController.swift */; };
+		A6C6344F28CCBB2700ECADF6 /* PokeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6344E28CCBB2700ECADF6 /* PokeAPI.swift */; };
+		A6C6345128CCC0D900ECADF6 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345028CCC0D900ECADF6 /* APIError.swift */; };
+		A6C6345328CCC12C00ECADF6 /* TypesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345228CCC12C00ECADF6 /* TypesFetcher.swift */; };
+		A6C6345528CCC22200ECADF6 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345428CCC22200ECADF6 /* Type.swift */; };
+		A6C6345728CCC27900ECADF6 /* Ability.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345628CCC27900ECADF6 /* Ability.swift */; };
+		A6C6345928CCC28D00ECADF6 /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345828CCC28D00ECADF6 /* Move.swift */; };
+		A6C6345B28CCC2A200ECADF6 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345A28CCC2A200ECADF6 /* Pokemon.swift */; };
+		A6C6345D28CCD88D00ECADF6 /* PokedexDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345C28CCD88D00ECADF6 /* PokedexDataStore.swift */; };
+		A6C6345F28CCD92900ECADF6 /* PreloadedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6345E28CCD92800ECADF6 /* PreloadedList.swift */; };
+		A6C6346128CCE1D300ECADF6 /* PokemonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6346028CCE1D300ECADF6 /* PokemonItem.swift */; };
+		A6C6346328CD0FFF00ECADF6 /* AbilitiesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6346228CD0FFF00ECADF6 /* AbilitiesFetcher.swift */; };
+		A6C6346528CD10C100ECADF6 /* MovesFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6346428CD10C100ECADF6 /* MovesFetcher.swift */; };
+		A6C6346728CD113D00ECADF6 /* PokemonsFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6C6346628CD113D00ECADF6 /* PokemonsFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B5ADB7E767B5946050F470C /* Pods_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A602538E28D251AA005993E5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A602539028D25CD1005993E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A602539228D27628005993E5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A663563728CA690B00B40FC1 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		A663563828CA690B00B40FC1 /* SearchResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsViewController.xib; sourceTree = "<group>"; };
+		A663564128CA6CDF00B40FC1 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		A663564228CA6CDF00B40FC1 /* SearchResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultsTableViewCell.xib; sourceTree = "<group>"; };
 		A6C0D3D428C8F76D006D39F1 /* Pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6C0D3D728C8F76D006D39F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6C0D3D928C8F76D006D39F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6C0D3DB28C8F76D006D39F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6C0D3DB28C8F76D006D39F1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A6C0D3DE28C8F76D006D39F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6C0D3E028C8F76E006D39F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6C0D3E328C8F76E006D39F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6C0D3E528C8F76E006D39F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6C0D3EB28C94618006D39F1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		A6C0D3ED28CA4878006D39F1 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
+		A6C0D3EE28CA4878006D39F1 /* SearchBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchBarViewController.xib; sourceTree = "<group>"; };
+		A6C6343F28CB4CB600ECADF6 /* PokemonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6C6344028CB4CB600ECADF6 /* PokemonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonCollectionViewCell.xib; sourceTree = "<group>"; };
+		A6C6344528CB652000ECADF6 /* PokemonCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCollectionViewController.swift; sourceTree = "<group>"; };
+		A6C6344728CBB95500ECADF6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		A6C6344928CBBFBE00ECADF6 /* FavoriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		A6C6344B28CBFC4E00ECADF6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		A6C6344E28CCBB2700ECADF6 /* PokeAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeAPI.swift; sourceTree = "<group>"; };
+		A6C6345028CCC0D900ECADF6 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A6C6345228CCC12C00ECADF6 /* TypesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesFetcher.swift; sourceTree = "<group>"; };
+		A6C6345428CCC22200ECADF6 /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		A6C6345628CCC27900ECADF6 /* Ability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ability.swift; sourceTree = "<group>"; };
+		A6C6345828CCC28D00ECADF6 /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
+		A6C6345A28CCC2A200ECADF6 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		A6C6345C28CCD88D00ECADF6 /* PokedexDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexDataStore.swift; sourceTree = "<group>"; };
+		A6C6345E28CCD92800ECADF6 /* PreloadedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloadedList.swift; sourceTree = "<group>"; };
+		A6C6346028CCE1D300ECADF6 /* PokemonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonItem.swift; sourceTree = "<group>"; };
+		A6C6346228CD0FFF00ECADF6 /* AbilitiesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitiesFetcher.swift; sourceTree = "<group>"; };
+		A6C6346428CD10C100ECADF6 /* MovesFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesFetcher.swift; sourceTree = "<group>"; };
+		A6C6346628CD113D00ECADF6 /* PokemonsFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonsFetcher.swift; sourceTree = "<group>"; };
+		AAD273D3A5A758B3ECCF2A05 /* Pods-Pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.release.xcconfig"; path = "Target Support Files/Pods-Pokedex/Pods-Pokedex.release.xcconfig"; sourceTree = "<group>"; };
+		CDEF854FA9CEE45B30F84E33 /* Pods-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pokedex.debug.xcconfig"; path = "Target Support Files/Pods-Pokedex/Pods-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +93,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81278C88F8CFE830897C2010 /* Pods_Pokedex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46BE632A1DFC16BCA0406F63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDEF854FA9CEE45B30F84E33 /* Pods-Pokedex.debug.xcconfig */,
+				AAD273D3A5A758B3ECCF2A05 /* Pods-Pokedex.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5AFDAF07343745F5410E7EC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B5ADB7E767B5946050F470C /* Pods_Pokedex.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A663563B28CA691A00B40FC1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0D3DB28C8F76D006D39F1 /* SearchViewController.swift */,
+				A6C0D3ED28CA4878006D39F1 /* SearchBarViewController.swift */,
+				A663563728CA690B00B40FC1 /* SearchResultsViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		A663563C28CA693C00B40FC1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0D3EE28CA4878006D39F1 /* SearchBarViewController.xib */,
+				A663563828CA690B00B40FC1 /* SearchResultsViewController.xib */,
+				A663564128CA6CDF00B40FC1 /* SearchResultsTableViewCell.swift */,
+				A663564228CA6CDF00B40FC1 /* SearchResultsTableViewCell.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		A6C0D3CB28C8F76D006D39F1 = {
 			isa = PBXGroup;
 			children = (
 				A6C0D3D628C8F76D006D39F1 /* Pokedex */,
 				A6C0D3D528C8F76D006D39F1 /* Products */,
+				46BE632A1DFC16BCA0406F63 /* Pods */,
+				5AFDAF07343745F5410E7EC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +159,71 @@
 		A6C0D3D628C8F76D006D39F1 /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				A6C6344D28CCBAF800ECADF6 /* API */,
+				A6C0D3F328CA48BD006D39F1 /* Model */,
+				A6C0D3F228CA48B0006D39F1 /* Controller */,
+				A6C0D3F128CA4888006D39F1 /* View */,
 				A6C0D3D728C8F76D006D39F1 /* AppDelegate.swift */,
 				A6C0D3D928C8F76D006D39F1 /* SceneDelegate.swift */,
-				A6C0D3DB28C8F76D006D39F1 /* ViewController.swift */,
-				A6C0D3DD28C8F76D006D39F1 /* Main.storyboard */,
 				A6C0D3E028C8F76E006D39F1 /* Assets.xcassets */,
-				A6C0D3E228C8F76E006D39F1 /* LaunchScreen.storyboard */,
+				A602538E28D251AA005993E5 /* GoogleService-Info.plist */,
 				A6C0D3E528C8F76E006D39F1 /* Info.plist */,
 			);
 			path = Pokedex;
+			sourceTree = "<group>";
+		};
+		A6C0D3F128CA4888006D39F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A663563C28CA693C00B40FC1 /* Search */,
+				A6C6343F28CB4CB600ECADF6 /* PokemonCollectionViewCell.swift */,
+				A6C6344028CB4CB600ECADF6 /* PokemonCollectionViewCell.xib */,
+				A6C6344928CBBFBE00ECADF6 /* FavoriteCollectionViewCell.swift */,
+				A6C0D3DD28C8F76D006D39F1 /* Main.storyboard */,
+				A6C0D3E228C8F76E006D39F1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6C0D3F228CA48B0006D39F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A602539228D27628005993E5 /* LoginViewController.swift */,
+				A6C6344728CBB95500ECADF6 /* WelcomeViewController.swift */,
+				A663563B28CA691A00B40FC1 /* Search */,
+				A6C6344B28CBFC4E00ECADF6 /* DetailsViewController.swift */,
+				A6C6344528CB652000ECADF6 /* PokemonCollectionViewController.swift */,
+				A6C0D3EB28C94618006D39F1 /* UIViewController+Extension.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A6C0D3F328CA48BD006D39F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6C6345C28CCD88D00ECADF6 /* PokedexDataStore.swift */,
+				A6C6345E28CCD92800ECADF6 /* PreloadedList.swift */,
+				A6C6345428CCC22200ECADF6 /* Type.swift */,
+				A6C6345628CCC27900ECADF6 /* Ability.swift */,
+				A6C6345828CCC28D00ECADF6 /* Move.swift */,
+				A6C6346028CCE1D300ECADF6 /* PokemonItem.swift */,
+				A6C6345A28CCC2A200ECADF6 /* Pokemon.swift */,
+				A602539028D25CD1005993E5 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6C6344D28CCBAF800ECADF6 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A6C6344E28CCBB2700ECADF6 /* PokeAPI.swift */,
+				A6C6345228CCC12C00ECADF6 /* TypesFetcher.swift */,
+				A6C6346228CD0FFF00ECADF6 /* AbilitiesFetcher.swift */,
+				A6C6346428CD10C100ECADF6 /* MovesFetcher.swift */,
+				A6C6346628CD113D00ECADF6 /* PokemonsFetcher.swift */,
+				A6C6345028CCC0D900ECADF6 /* APIError.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6C0D3E828C8F76E006D39F1 /* Build configuration list for PBXNativeTarget "Pokedex" */;
 			buildPhases = (
+				87B5749FB8CB264828EF794D /* [CP] Check Pods Manifest.lock */,
 				A6C0D3D028C8F76D006D39F1 /* Sources */,
 				A6C0D3D128C8F76D006D39F1 /* Frameworks */,
 				A6C0D3D228C8F76D006D39F1 /* Resources */,
+				405D99612E5467B8273CFA1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +287,92 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6C0D3E428C8F76E006D39F1 /* LaunchScreen.storyboard in Resources */,
+				A602538F28D251AA005993E5 /* GoogleService-Info.plist in Resources */,
+				A663563A28CA690B00B40FC1 /* SearchResultsViewController.xib in Resources */,
+				A663564428CA6CDF00B40FC1 /* SearchResultsTableViewCell.xib in Resources */,
+				A6C6344228CB4CB600ECADF6 /* PokemonCollectionViewCell.xib in Resources */,
 				A6C0D3E128C8F76E006D39F1 /* Assets.xcassets in Resources */,
+				A6C0D3F028CA4878006D39F1 /* SearchBarViewController.xib in Resources */,
 				A6C0D3DF28C8F76D006D39F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		405D99612E5467B8273CFA1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokedex/Pods-Pokedex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pokedex/Pods-Pokedex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pokedex/Pods-Pokedex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B5749FB8CB264828EF794D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pokedex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A6C0D3D028C8F76D006D39F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6C0D3DC28C8F76D006D39F1 /* ViewController.swift in Sources */,
+				A602539328D27628005993E5 /* LoginViewController.swift in Sources */,
+				A602539128D25CD1005993E5 /* User.swift in Sources */,
+				A6C0D3EC28C94618006D39F1 /* UIViewController+Extension.swift in Sources */,
+				A6C6344828CBB95500ECADF6 /* WelcomeViewController.swift in Sources */,
+				A6C6344F28CCBB2700ECADF6 /* PokeAPI.swift in Sources */,
+				A663563928CA690B00B40FC1 /* SearchResultsViewController.swift in Sources */,
+				A6C6344628CB652000ECADF6 /* PokemonCollectionViewController.swift in Sources */,
+				A6C6345B28CCC2A200ECADF6 /* Pokemon.swift in Sources */,
+				A6C6346128CCE1D300ECADF6 /* PokemonItem.swift in Sources */,
+				A6C6344128CB4CB600ECADF6 /* PokemonCollectionViewCell.swift in Sources */,
+				A6C6346528CD10C100ECADF6 /* MovesFetcher.swift in Sources */,
+				A6C0D3EF28CA4878006D39F1 /* SearchBarViewController.swift in Sources */,
+				A6C6345528CCC22200ECADF6 /* Type.swift in Sources */,
+				A6C0D3DC28C8F76D006D39F1 /* SearchViewController.swift in Sources */,
 				A6C0D3D828C8F76D006D39F1 /* AppDelegate.swift in Sources */,
+				A6C6345928CCC28D00ECADF6 /* Move.swift in Sources */,
+				A6C6344A28CBBFBE00ECADF6 /* FavoriteCollectionViewCell.swift in Sources */,
+				A6C6345728CCC27900ECADF6 /* Ability.swift in Sources */,
+				A6C6345328CCC12C00ECADF6 /* TypesFetcher.swift in Sources */,
+				A6C6346328CD0FFF00ECADF6 /* AbilitiesFetcher.swift in Sources */,
+				A663564328CA6CDF00B40FC1 /* SearchResultsTableViewCell.swift in Sources */,
 				A6C0D3DA28C8F76D006D39F1 /* SceneDelegate.swift in Sources */,
+				A6C6346728CD113D00ECADF6 /* PokemonsFetcher.swift in Sources */,
+				A6C6344C28CBFC4E00ECADF6 /* DetailsViewController.swift in Sources */,
+				A6C6345D28CCD88D00ECADF6 /* PokedexDataStore.swift in Sources */,
+				A6C6345128CCC0D900ECADF6 /* APIError.swift in Sources */,
+				A6C6345F28CCD92900ECADF6 /* PreloadedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +514,7 @@
 		};
 		A6C0D3E928C8F76E006D39F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDEF854FA9CEE45B30F84E33 /* Pods-Pokedex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,8 +526,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,12 +540,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A6C0D3EA28C8F76E006D39F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAD273D3A5A758B3ECCF2A05 /* Pods-Pokedex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -321,8 +558,11 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +572,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
