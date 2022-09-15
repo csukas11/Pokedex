@@ -235,8 +235,8 @@ extension SearchViewController: SearchResultsViewControllerDelegate {
   
   func resultSelected(result: String) {
     // update search keyword
-    searchKeyword = result
     searchBarVC.searchKeyword = result
+    search(for: result)
     view.endEditing(false)
     // load favorite pokemons
     pokemonsToDisplay = pokemonsToFilter.search(for: searchKeyword).map { $0.id }

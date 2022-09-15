@@ -134,7 +134,7 @@ extension SearchResultsViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 28
+    return 30
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
