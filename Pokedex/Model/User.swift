@@ -32,17 +32,9 @@ class User {
       return _username
     }
     set {
-      guard isAuthenticated && !uid.isEmpty else { return }
+      guard isAuthenticated else { return }
       _username = newValue
-      db.collection("users").document(self.uid).setData([
-        "username": _username,
-        "favoriteTypes": _favoriteTypes,
-        "favoritePokemons": _favoritePokemons
-      ]) { err in
-        if let err = err {
-          print("Error writing document: \(err)")
-        }
-      }
+      saveInnerState()
     }
   }
   
@@ -52,17 +44,9 @@ class User {
       return _favoriteTypes
     }
     set {
-      guard isAuthenticated && !uid.isEmpty else { return }
+      guard isAuthenticated else { return }
       _favoriteTypes = newValue
-      db.collection("users").document(self.uid).setData([
-        "username": _username,
-        "favoriteTypes": _favoriteTypes,
-        "favoritePokemons": _favoritePokemons
-      ]) { err in
-        if let err = err {
-          print("Error writing document: \(err)")
-        }
-      }
+      saveInnerState()
     }
   }
   
@@ -72,17 +56,9 @@ class User {
       return _favoritePokemons
     }
     set {
-      guard isAuthenticated && !uid.isEmpty else { return }
+      guard isAuthenticated else { return }
       _favoritePokemons = newValue
-      db.collection("users").document(self.uid).setData([
-        "username": _username,
-        "favoriteTypes": _favoriteTypes,
-        "favoritePokemons": _favoritePokemons
-      ]) { err in
-        if let err = err {
-          print("Error writing document: \(err)")
-        }
-      }
+      saveInnerState()
     }
   }
   
@@ -194,6 +170,18 @@ class User {
       self._username = data["username"] as? String ?? ""
       self._favoriteTypes = data["favoriteTypes"] as? [Int] ?? [Int]()
       self._favoritePokemons = data["favoritePokemons"] as? [Int] ?? [Int]()
+    }
+  }
+  
+  private func saveInnerState() {
+    db.collection("users").document(self.uid).setData([
+      "username": _username,
+      "favoriteTypes": _favoriteTypes,
+      "favoritePokemons": _favoritePokemons
+    ]) { err in
+      if let err = err {
+        print("Error writing document: \(err)")
+      }
     }
   }
   
